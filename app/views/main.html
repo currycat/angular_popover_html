@@ -1,0 +1,32 @@
+<div class="row">
+
+
+  <popover popover-html="<b>NainoSome</b><br>Popover Text<br><img src='http://s13.postimg.org/8j90olg9j/yo2.gif' width='100'>" popover-placement="right" button-icon="ion-android-more-vertical" button-label="Fistro"></popover>
+
+  <h1>Popovers</h1>
+
+  <h3>Click, y 'dismissable' click</h3>
+  <z-popover class="btn btn-default" placement="bottom" template="scripts/controllers/popover2.html" controller="popover.test">PopZilla</z-popover>
+
+  <z-popover tabindex="0" class="btn btn-default" placement="bottom" template="scripts/controllers/popover2.html" controller="popover.test" trigger="focus">PopZilla que se cierra cuando clicas en otro sitio (hay que añadir tabindex=0)</z-popover>
+
+  <br>
+  <h3>La opción 2 del desplegable tiene un hover</h3>
+  <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><z-popover placement="right" template="scripts/controllers/popover.html" trigger="hover">PopZilla Hover</z-popover></a></li>
+
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+</div>
+  <br><br><br>
+  <z-popover placement="right" template="scripts/controllers/popover.html" trigger="hover"><strong>Yo no soy un botón pero activo PopZilla si pasas por encima</strong></z-popover>
+
+
+</div>
